@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-		"start": "concurrently \"http-server -o public\" \"node-sass sass/styles.scss -o public\"",
+		"start": "concurrently \"http-server -o public\" \"node-sass -w sass/styles.scss -o public\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Matthew Palmer <matthew.palmer1@mohawkcollege.ca>",

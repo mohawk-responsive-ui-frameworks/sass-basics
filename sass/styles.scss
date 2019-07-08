@@ -8,7 +8,32 @@
 	color: #cf649a;
 }
 
+
 .hero-banner h1 {
 	font-style: italic;
 	color: #cf649a;
+}
+
+
+.gallery .card {
+	margin-bottom: 1rem;
+}
+
+.gallery .card-title {
+	font-size: 1.25rem;
+}
+
+.gallery .card-footer {
+	text-align: right;
+}
+
+
+.main-footer {
+	margin-top: 1rem;
+	padding: 1rem;
+	background-color: #eee;
+}
+
+.main-footer p {
+	margin-bottom: 0;
 }
