@@ -12,23 +12,19 @@ body {
 
 .main-header {
 	background-color: #036;
+
+	h1 {
+		margin-bottom: 0;
+		font-style: italic;
+		color: #cf649a;
+		transition: color .2s linear;
+
+		&:hover {
+			color: #af447a;
+		}
+	}
 }
 
-.main-header h1 {
-	margin-bottom: 0;
-	font-style: italic;
-	color: #cf649a;
-	transition: color .2s linear;
-}
-
-.main-header h1:hover {
-	color: #af447a;
-}
-
-
-.hero-banner {
-	text-align: justify;
-}
 
 .hero-banner h1 {
 	font-style: italic;
@@ -38,18 +34,18 @@ body {
 
 .gallery {
 	text-align: justify;
-}
 
-.gallery .card {
-	margin-bottom: 1rem;
-}
+	.card {
+		margin-bottom: 1rem;
+	}
 
-.gallery .card-title {
-	font-size: 1.25rem;
-}
+	.card-title {
+		font-size: 1.25rem;
+	}
 
-.gallery .card-footer {
-	text-align: right;
+	.card-footer {
+		text-align: right;
+	}
 }
 
 
@@ -61,8 +57,8 @@ body {
 	margin-top: 1rem;
 	padding: 1rem;
 	background-color: #eee;
-}
 
-.main-footer p {
-	margin-bottom: 0;
+	p {
+		margin-bottom: 0;
+	}
 }
