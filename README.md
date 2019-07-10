@@ -13,10 +13,13 @@ Throughout this activity you will be introduced to Sass's additional features on
 ***
 - [Rule Nesting](#rule-nesting)
 	- [Ampersand Operator](#ampersand-operator)
-	- [Rule Nesting Activity](#rule-nesting-activity)
+	- [Activity](#rule-nesting-activity)
 - [Variables](#variables)
+	- [Activity](#variables-activity)
 - [Imports](#imports)
-	- [Import Activity](#import-activity)
+	- [Activity](#import-activity)
+- [Mixins](#mixins)
+	- [Activity](#mixins-activity)
 - [Resources](#resources)
 ***
 
@@ -138,6 +141,10 @@ Take a moment to read this section of Sass's [documentation](https://sass-lang.c
 
 Imagine a very large CSS file that made use of the same colours multiple times. Now imagine wanting to change said colour into something else. You could use search and replace to accomplish this but Sass offers a much nicer way to keep track of colours that additionally provide context while reading through your code.
 
+
+
+### Variables Activity
+
 We can see a small example of multiple colours being used within our `sass/styles.css` file. The colour `#cf649a` appears twice and `#af447a` appears once. Lets put these values into Sass variables at the top of our file before any rules.
 
 ```scss
@@ -202,9 +209,55 @@ When complete you can see the expected result [here]().
 
 
 
+## Mixins
+
+Take a moment to read this section of Sass's [documentation](https://sass-lang.com/guide#topic-6).
+
+Mixins are a feature that allow us to compose our styles including full rulesets. They also take _parameters_ that allow us to generate CSS dynamically. For now we're just going to learn the very basics of mixins and build on that in the next module.
+
+
+
+### Mixins Activity
+
+Create a new file called `_mixins.scss` and `@import` it directly after our `_variables.scss` import. Write the following mixin code into our newly imported `_mixins.scss` file.
+
+```scss
+@mixin color-with-hover($color) {
+	color: $color;
+	transition: color .2s linear;
+	&:hover {
+		color: darken($color, 5%);
+	}
+}
+```
+
+Now update the `_main-header.scss` file to contain the following contents:
+
+```scss
+.main-header {
+	background-color: #036;
+
+	h1 {
+		margin-bottom: 0;
+		font-style: italic;
+		@include color-with-hover($color-main-heading);
+	}
+}
+```
+
+The `@include` directive is how we apply a previously declared mixin.
+
+When complete you can see the expected result [here]().
+
+***&mdash; [Documentation](https://sass-lang.com/guide#topic-6)***
+
+
+
+
 ## Resources
 
 - [Rule Nesting](https://sass-lang.com/guide#topic-3)
 - [Variables](https://sass-lang.com/guide#topic-2)
 - [Imports](https://sass-lang.com/guide#topic-5)
 - [Partials](https://sass-lang.com/guide#topic-4)
+- [Mixins](https://sass-lang.com/guide#topic-6)
