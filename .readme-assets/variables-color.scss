@@ -1,3 +1,6 @@
+$color-main-heading: #cf649a;
+$color-main-heading-dark: #af447a;
+
 html {
 	position: relative;
 	min-height: 100%;
@@ -15,12 +18,12 @@ body {
 .main-header h1 {
 	margin-bottom: 0;
 	font-style: italic;
-	color: #cf649a;
+	color: $color-main-heading;
 	transition: color .2s linear;
 }
 
 .main-header h1:hover {
-	color: #af447a;
+	color: $color-main-heading-dark;
 }
 
 
@@ -30,7 +33,7 @@ body {
 
 .hero-banner h1 {
 	font-style: italic;
-	color: #cf649a;
+	color: $color-main-heading;
 }
 
 

@@ -10,6 +10,7 @@ Throughout this activity you will be introduced to Sass's additional features on
 - [Rule Nesting](#rule-nesting)
 	- [Ampersand Operator](#ampersand-operator)
 	- [Rule Nesting Activity](#rule-nesting-activity)
+- [Variables](#variables)
 - [Resources](#resources)
 ***
 
@@ -60,7 +61,7 @@ Rule nesting allows us to write our Sass in a more concise manner that also make
 ```
 ***
 
-***&mdash; [Documentation](https://sass-lang.com/documentation/style-rules#nesting)***
+***&mdash; [Documentation](https://sass-lang.com/guide#topic-3)***
 
 
 
@@ -123,6 +124,31 @@ Implement rule nesting within `sass/styles.scss` wherever reasonably possible. T
 
 
 
+## Variables
+
+Imagine a very large CSS file that made use of the same colours multiple times. Now imagine wanting to change said colour into something else. You could use search and replace to accomplish this but Sass offers a much nicer way to keep track of colours that additionally provide context while reading through your code.
+
+We can see a small example of multiple colours being used within our `sass/styles.css` file. The colour `#cf649a` appears twice and `#af447a` appears once. Lets put these values into Sass variables at the top of our file before any rules.
+
+```scss
+$color-main-heading: #cf649a;
+$color-main-heading-dark: #af447a;
+```
+
+Now replace the hard-coded colour values throughout your Sass like so, but using the appropriate variable names:
+
+```scss
+color: $variable-name;
+```
+
+You can see the expected results [here](.readme-assets/variables-color.scss).
+
+***&mdash; [Documentation](https://sass-lang.com/guide#topic-2)***
+
+
+
+
 ## Resources
 
-- [Rule Nesting](https://sass-lang.com/documentation/style-rules#nesting)
+- [Rule Nesting](https://sass-lang.com/guide#topic-3)
+- [Variables](https://sass-lang.com/guide#topic-2)
