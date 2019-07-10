@@ -15,13 +15,9 @@ Throughout this activity you will be introduced to Sass's additional features on
 	- [Ampersand Operator](#ampersand-operator)
 	- [Activity](#rule-nesting-activity)
 - [Variables](#variables)
-	- [Activity](#variables-activity)
 - [Imports](#imports)
-	- [Activity](#import-activity)
 - [Functions](#functions)
-	- [Activity](#functions-activity)
 - [Mixins](#mixins)
-	- [Activity](#mixins-activity)
 - [Resources](#resources)
 ***
 
@@ -143,10 +139,6 @@ Take a moment to read this section of Sass's [documentation](https://sass-lang.c
 
 Imagine a very large CSS file that made use of the same colours multiple times. Now imagine wanting to change said colour into something else. You could use search and replace to accomplish this but Sass offers a much nicer way to keep track of colours that additionally provide context while reading through your code.
 
-
-
-### Variables Activity
-
 We can see a small example of multiple colours being used within our `sass/styles.css` file. The colour `#cf649a` appears twice and `#af447a` appears once. Lets put these values into Sass variables at the top of our file before any rules.
 
 ```scss
@@ -188,10 +180,6 @@ Move the variables into the newly created file and at the top of `styles.scss` a
 
 To test if this worked remove `public/styles.css` and rerun `npm start`. If your web page is still styled, it worked!
 
-
-
-### Import Activity
-
 Split up the remaining SCSS into separate files into the following files:
 
 | Filename | Description |
@@ -219,10 +207,6 @@ Functions allow us to pass values as _parameters_ to resolve into another functi
 darken(#fff, 20%);
 ```
 
-
-
-### Functions Activity
-
 In `_variables.scss` we can see that we set the colour of the `h1` element and on hover, transition it into another darker colour. Lets utilize the `darken` function here:
 
 ```scss
@@ -242,10 +226,6 @@ If the usefulness of this isn't all too clear the next section should highlight 
 Take a moment to read this section of Sass's [documentation](https://sass-lang.com/guide#topic-6).
 
 Mixins are a feature that allow us to compose our styles including full rulesets. They also take _parameters_ that allow us to generate CSS dynamically. For now we're just going to learn the very basics of mixins and build on that in the next module.
-
-
-
-### Mixins Activity
 
 Create a new file called `_mixins.scss` and `@import` it directly after our `_variables.scss` import. Write the following mixin code into our newly imported `_mixins.scss` file.
 

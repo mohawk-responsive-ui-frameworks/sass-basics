@@ -1,7 +1,7 @@
 {
   "name": "@mohawk-college/1-installing-bootstrap",
   "version": "1.0.0",
-  "description": "",
+  "description": "Activity: Learn the basics of Sass",
   "scripts": {
 		"start": "concurrently \"http-server -o public\" \"node-sass sass/styles.scss -o public\" \"node-sass -w sass/styles.scss -o public\"",
     "test": "echo \"Error: no test specified\" && exit 1"
