@@ -1,0 +1,13 @@
+.main-header {
+	background-color: #036;
+
+	h1 {
+		margin-bottom: 0;
+		font-style: italic;
+		color: $color-main-heading;
+		transition: color .2s linear;
+		&:hover {
+			color: $color-main-heading-dark;
+		}
+	}
+}
