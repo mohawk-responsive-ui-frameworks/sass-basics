@@ -18,6 +18,8 @@ Throughout this activity you will be introduced to Sass's additional features on
 	- [Activity](#variables-activity)
 - [Imports](#imports)
 	- [Activity](#import-activity)
+- [Functions](#functions)
+	- [Activity](#functions-activity)
 - [Mixins](#mixins)
 	- [Activity](#mixins-activity)
 - [Resources](#resources)
@@ -209,6 +211,32 @@ When complete you can see the expected result [here]().
 
 
 
+## Functions
+
+Functions allow us to pass values as _parameters_ to resolve into another function. To keep things light and simple we're just going to be using the `darken` function. Looking at the [documentation](https://sass-lang.com/documentation/functions/color#darken) for this function we see it has two parameters: `$color`, and `$amount`. We can call the function like this, so it resolves to a function twenty percent darker than pure white:
+
+```scss
+darken(#fff, 20%);
+```
+
+
+
+### Functions Activity
+
+In `_variables.scss` we can see that we set the colour of the `h1` element and on hover, transition it into another darker colour. Lets utilize the `darken` function here:
+
+```scss
+$color-main-heading: #cf649a;
+$color-main-heading-dark: darken($color-main-heading, 5%);
+```
+
+If the usefulness of this isn't all too clear the next section should highlight it for you.
+
+***&mdash; [Documentation](https://sass-lang.com/documentation/functions)***
+
+
+
+
 ## Mixins
 
 Take a moment to read this section of Sass's [documentation](https://sass-lang.com/guide#topic-6).
@@ -245,7 +273,7 @@ Now update the `_main-header.scss` file to contain the following contents:
 }
 ```
 
-The `@include` directive is how we apply a previously declared mixin.
+The `@include` directive is how we apply a previously declared mixin. Also take note of how we no longer need the `$color-main-heading-dark` variable anymore. This mixin also wouldn't be possible to implement without the `darken` function, we would instead need to implement a second parameter for `$hover-color`.
 
 When complete you can see the expected result [here]().
 
@@ -261,3 +289,6 @@ When complete you can see the expected result [here]().
 - [Imports](https://sass-lang.com/guide#topic-5)
 - [Partials](https://sass-lang.com/guide#topic-4)
 - [Mixins](https://sass-lang.com/guide#topic-6)
+- [Functions](https://sass-lang.com/documentation/functions)
+- [Function: `darken`](https://sass-lang.com/documentation/functions/color#darken)
+- [Function: `lighten`](https://sass-lang.com/documentation/functions/color#lighten)
