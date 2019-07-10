@@ -19,6 +19,8 @@ Throughout this activity you will be introduced to Sass's additional features on
 
 ## Rule Nesting
 
+Take a moment to read this section of Sass's [documentation](https://sass-lang.com/guide#topic-3).
+
 Rule nesting allows us to write our Sass in a more concise manner that also makes it easier to change a parent class name without updating it in multiple spots in your Sass file. To make things clearer here's an example of CSS rewritten using Sass nesting you can find in `sass/styles.scss`. The SCSS compiles into the CSS version making them functional equivalents:
 
 ***
@@ -60,8 +62,6 @@ Rule nesting allows us to write our Sass in a more concise manner that also make
 }
 ```
 ***
-
-***&mdash; [Documentation](https://sass-lang.com/guide#topic-3)***
 
 
 
@@ -121,10 +121,14 @@ Using `&` like this isn't very useful, but where it does come in handy is when w
 
 Implement rule nesting within `sass/styles.scss` wherever reasonably possible. Try to complete activities on your own but check your work with the [expected outcome](.readme-assets/rule-nesting.scss).
 
+***&mdash; [Documentation](https://sass-lang.com/guide#topic-3)***
+
 
 
 
 ## Variables
+
+Take a moment to read this section of Sass's [documentation](https://sass-lang.com/guide#topic-2).
 
 Imagine a very large CSS file that made use of the same colours multiple times. Now imagine wanting to change said colour into something else. You could use search and replace to accomplish this but Sass offers a much nicer way to keep track of colours that additionally provide context while reading through your code.
 
